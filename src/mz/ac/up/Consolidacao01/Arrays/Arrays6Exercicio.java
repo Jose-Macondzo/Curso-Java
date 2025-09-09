@@ -71,6 +71,8 @@ public class Arrays6Exercicio {
         System.out.println("-------------------------------------Pauta-------------------------------------");
         System.out.println("Nome\t\t\tNumero estudante\tNota 1\tNota 2\tNota 3\t" +
                 "Media\tClassificao");
+        System.out.println("-------------------------------------------------------------------------------");
+        
         for (int i = 0; i < totalEstudantes; i++) {
             System.out.println(nome[i]+"\t"+numeroEstudante[i]+"\t\t"+
                     notas[i][0]+"\t"+
