@@ -1,10 +1,10 @@
-package mz.ac.up.javacore.introducao.teste;
+package mz.ac.up.javacore.introducaoMetodos.teste;
 
-import mz.ac.up.javacore.introducao.classes.Calculadora2;
+import mz.ac.up.javacore.introducaoMetodos.classes.Calculadora;
 
 import java.util.Scanner;
 
-public class CalculadoraTeste2 {
+public class CalculadoraTeste {
     /**
      * Crie uma classe estudante com os seguintes atributos: nome, idade, notas[3]
      * criar construtor completo e um vazio.
@@ -16,7 +16,7 @@ public class CalculadoraTeste2 {
      * @param args
      */
     public static void main(String[] args) {
-        Calculadora2 calc = new Calculadora2();
+        Calculadora calc = new Calculadora();
         Scanner leia = new Scanner(System.in);
 
         int numero1;

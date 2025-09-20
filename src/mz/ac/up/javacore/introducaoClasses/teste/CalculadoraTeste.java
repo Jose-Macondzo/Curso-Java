@@ -1,6 +1,6 @@
-package mz.ac.up.javacore.introducao.teste;
+package mz.ac.up.javacore.introducaoClasses.teste;
 
-import mz.ac.up.javacore.introducao.classes.Calculadora;
+import mz.ac.up.javacore.introducaoClasses.classes.Calculadora;
 
 import java.util.Scanner;
 

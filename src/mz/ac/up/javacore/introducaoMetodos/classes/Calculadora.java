@@ -1,6 +1,6 @@
-package mz.ac.up.javacore.introducao.classes;
+package mz.ac.up.javacore.introducaoMetodos.classes;
 
-public class Calculadora2 {
+public class Calculadora {
     public int somaDois(int numero1, int numero2){
         int soma = numero1 + numero2;
         return soma;

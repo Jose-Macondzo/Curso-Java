@@ -1,4 +1,4 @@
-package mz.ac.up.javacore.introducao.classes;
+package mz.ac.up.javacore.introducaoClasses.classes;
 
 public class Estudante {
     public String nome;

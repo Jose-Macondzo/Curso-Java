@@ -1,6 +1,6 @@
-package mz.ac.up.javacore.introducaosobrecargametodos.testes;
+package mz.ac.up.javacore.sobrecargametodos.testes;
 
-import mz.ac.up.javacore.introducaosobrecargametodos.classes.Pessoa;
+import mz.ac.up.javacore.sobrecargametodos.classes.Pessoa;
 
 public class PessoaTeste {
     public static void main(String[] args) {

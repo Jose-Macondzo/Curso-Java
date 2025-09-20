@@ -1,6 +1,6 @@
-package mz.ac.up.javacore.introducao.teste;
+package mz.ac.up.javacore.introducaoClasses.teste;
 
-import mz.ac.up.javacore.introducao.classes.Automovel;
+import mz.ac.up.javacore.introducaoClasses.classes.Automovel;
 
 public class AutomovelTeste {
     public static void main(String[] args) {

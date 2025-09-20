@@ -1,6 +1,6 @@
-package mz.ac.up.javacore.introducao.teste;
+package mz.ac.up.javacore.introducaoClasses.teste;
 
-import mz.ac.up.javacore.introducao.classes.Professor;
+import mz.ac.up.javacore.introducaoClasses.classes.Professor;
 
 public class ProfessorTeste {
     public static void main(String[] args) {

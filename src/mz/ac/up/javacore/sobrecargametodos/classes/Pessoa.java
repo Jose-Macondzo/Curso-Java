@@ -1,4 +1,4 @@
-package mz.ac.up.javacore.introducaosobrecargametodos.classes;
+package mz.ac.up.javacore.sobrecargametodos.classes;
 
 public class Pessoa {
     private String nome;
