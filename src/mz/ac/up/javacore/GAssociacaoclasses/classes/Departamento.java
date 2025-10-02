@@ -14,6 +14,23 @@ public class Departamento {
         this.endereco = endereco;
     }
 
+    public void imprimir() {
+        System.out.println("============================Departamento============================");
+        System.out.println("Endereco do departamento: ");
+        System.out.println("Cidade: " + endereco.getCidade() + "\nBairro: " + endereco.getBairro() + "\nRua: " + endereco.getRua());
+        System.out.println("\n+++++++++++++++++++++++++++++++Pessoas no Departamento+++++++++++++++++++++++++++++++");
+
+        for (Pessoa pessoa : pessoas) {
+            System.out.println("---------------------------------------");
+            System.out.println("Nome: " + pessoa.getNome() + "\nIdade: " + pessoa.getIdade() + "\nGenero: " + pessoa.getGenero() + "\nIdentificacao: " + pessoa.getIdentidade());
+            System.out.println("Enderecos: ");
+
+            for (Endereco endereco : pessoa.getEnderecos()) {
+                System.out.println("Cidade: " + endereco.getCidade()+"\nBairro: "+endereco.getBairro()+"\nRua: "+endereco.getRua());
+            }
+        }
+    }
+
     public Pessoa[] getPessoas() {
         return pessoas;
     }
@@ -32,9 +49,6 @@ public class Departamento {
 
     @Override
     public String toString() {
-        return "Departamento{" +
-                "pessoas=" + Arrays.toString(pessoas) +
-                ", endereco=" + endereco +
-                '}';
+        return "Departamento{" + "pessoas=" + Arrays.toString(pessoas) + ", endereco=" + endereco + '}';
     }
 }

@@ -60,6 +60,24 @@ public class Pessoa {
         this.enderecos = enderecos;
     }
 
+    public void imprimir() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Idade: " + this.idade);
+        if (this.genero == 'M') {
+            System.out.println("Genero: Masculino");
+        } else {
+            System.out.println("Genero: Feminino");
+        }
+        System.out.println("Identidade: " + this.identidade);
+        System.out.println("Enderecos: ");
+        for (Endereco endereco : this.enderecos) {
+            System.out.println("\t\tCidade: " + endereco.getCidade());
+            System.out.println("\t\tBairro: " + endereco.getBairro());
+            System.out.println("\t\tRua: " + endereco.getRua());
+            System.out.println("-----------------------------");
+        }
+    }
+
     @Override
     public String toString() {
         return "Pessoa{" +
