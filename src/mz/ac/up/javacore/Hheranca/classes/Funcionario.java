@@ -37,4 +37,6 @@ public class Funcionario extends Pessoa {
         System.out.println("Cargo: " + this.cargo);
         System.out.println("Salario: " + this.salario + "Mt.");
     }
+
+    public void exemplo(){};
 }
