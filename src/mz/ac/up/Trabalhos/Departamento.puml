@@ -1,0 +1,50 @@
+@startuml
+
+' Entidades
+entity "Departamento" {
+  +Nome
+  +Número
+  +DataInícioGerência
+}
+
+entity "Localização_Departamento" {
+  +Localização
+}
+
+entity "Projeto" {
+  +Nome
+  +Número
+  +Localização
+}
+
+entity "Empregado" {
+  +Nome
+  +Sobrenome
+  +NúmeroBI
+  +Endereço
+  +Salário
+  +Sexo
+  +DataNascimento
+}
+
+entity "Dependente" {
+  +Nome
+  +Sexo
+  +DataNascimento
+  +GrauParentesco
+}
+
+entity "Horas_Trabalhadas" {
+  +HorasPorSemana
+}
+
+' Relacionamentos
+Departamento ||--o{ Localização_Departamento : possui
+Departamento ||--o{ Projeto : controla
+Departamento ||--|| Empregado : gerente
+Projeto ||--o{ Horas_Trabalhadas : registra
+Horas_Trabalhadas }o--|| Empregado : trabalha
+Empregado ||--o{ Dependente : possui
+Empregado }|--|| Empregado : supervisiona
+
+@enduml

@@ -1,0 +1,47 @@
+@startuml
+
+' Entidades
+entity "Musico" {
+  +NumeroBI
+  +Nome
+  +Morada
+  +Telefone
+}
+
+entity "Instrumento" {
+  +CodigoInterno
+  +Nome
+}
+
+entity "Disco" {
+  +Identificador
+  +Titulo
+  +Data
+  +Formato
+}
+
+entity "Musica" {
+  +Titulo
+  +Autor
+}
+
+' Tabelas associativas
+entity "Musico_Instrumento" {
+}
+
+entity "Musico_Musica" {
+}
+
+' Relacionamentos
+Musico ||--o{ Musico_Instrumento : toca
+Instrumento ||--o{ Musico_Instrumento : é_tocado_por
+
+Disco ||--o{ Musica : contém
+Musica }o--|| Disco : pertence_a
+
+Musico ||--o{ Musico_Musica : participa
+Musica ||--o{ Musico_Musica : tem_participacao_de
+
+Musico ||--o{ Disco : produz
+
+@enduml
